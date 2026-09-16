@@ -161,7 +161,11 @@
             <details><summary>My role &amp; product lesson <span>+</span></summary><div class="details-body"><h4>My role</h4><p>Product strategy, customer discovery, workflow identification, requirements, prioritization, engineering collaboration, launch and adoption.</p><div class="callout"><strong>Product lesson:</strong> Emerging AI interfaces win when they unlock a workflow valuable enough for customers to change how they work.</div></div></details>
           </div>
           <div class="professional-visual mcp-product-visual" aria-label="Tracxn MCP product experience">
-            <div class="llm-tabs"><span>Claude</span><span>ChatGPT</span><span>Gemini</span></div>
+            <div class="llm-tabs" aria-label="Supported AI assistants">
+              <span class="active"><img src="assets/logos/claude.svg" alt="">Claude</span>
+              <span><img src="assets/logos/openai.svg" alt="">ChatGPT</span>
+              <span><img src="assets/logos/gemini.svg" alt="">Gemini</span>
+            </div>
             <div class="chat-question">Which fintech companies in India raised Series B funding recently?</div>
             <div class="mcp-call"><span>↗</span><div><small>MCP TOOL CALL</small><strong>Search Tracxn market data</strong></div><em>Trusted source</em></div>
             <div class="chat-answer"><small>RESEARCH RESPONSE</small><strong>Structured company results</strong><div class="answer-table"><span>Company</span><span>Stage</span><span>Sector</span><b>Verified Tracxn data</b><b>Series B</b><b>Fintech</b></div></div>
@@ -183,7 +187,22 @@
 
         <article class="case-card professional-showcase">
           <div class="professional-copy"><div class="case-top compact"><div><span class="case-index">03 / API + MONETIZATION</span><h3>External API</h3></div><div class="metric-chip"><strong>~$1M</strong><span>ARR</span></div></div><p class="problem-statement"><strong>The problem:</strong> enterprise customers needed Tracxn data inside their own applications and pipelines—not only inside the web product.</p><h4 class="feature-title">The product</h4><p class="solution-summary">A commercial API product that packages proprietary data for reliable programmatic access and enterprise integration.</p><ul class="feature-list compact-features"><li><span>01</span><div><strong>Developer-ready access</strong><small>OpenAPI specifications, authentication and understandable data models.</small></div></li><li><span>02</span><div><strong>Enterprise workflows</strong><small>Supports applications, data pipelines, analytics and internal tools.</small></div></li><li><span>03</span><div><strong>Packaged for purchase</strong><small>Connects technical capability to integration requirements and monetization.</small></div></li></ul><div class="impact-line"><span>OUTCOME</span><strong>Opened a recurring revenue stream of approximately $1M annually.</strong></div><details><summary>My role &amp; product lesson <span>+</span></summary><div class="details-body"><h4>My role</h4><p>Customer requirements, API capabilities, OpenAPI specifications, data-access workflows, packaging and cross-functional delivery.</p><div class="callout"><strong>Product lesson:</strong> An API becomes a product when customers can understand it, integrate it, buy it and use it reliably.</div></div></details></div>
-          <div class="professional-visual api-product-visual" aria-label="External API product model"><div class="api-console"><span>GET</span><code>/v1/companies?sector=fintech</code><b>200 OK</b></div><div class="api-hub"><div class="api-core">Tracxn<br><strong>API</strong></div><div class="consumer c1">Enterprise apps</div><div class="consumer c2">Data pipelines</div><div class="consumer c3">Analytics</div><div class="consumer c4">Internal tools</div></div><div class="api-foundation"><span>Authentication</span><span>OpenAPI</span><span>Data models</span><span>Reliability</span></div><div class="visual-caption"><strong>Proprietary data → productized API → customer systems</strong><span>Technical surface + commercial packaging</span></div></div>
+          <div class="professional-visual api-product-visual" aria-label="External API developer experience">
+            <div class="api-window">
+              <div class="api-window-bar"><span><i></i><i></i><i></i></span><strong>Developer workspace</strong><em>PRODUCTION</em></div>
+              <div class="api-request"><span>GET</span><code>/v1/companies</code><span class="api-send">Send request ↗</span></div>
+              <div class="api-params"><span><small>QUERY</small>sector = fintech</span><span><small>FILTER</small>country = India</span><span><small>LIMIT</small>25 results</span></div>
+              <div class="api-journey"><div><small>01 · CUSTOMER SYSTEM</small><strong>Research application</strong></div><b>→</b><div class="gateway"><small>02 · PRODUCT LAYER</small><strong>Auth · limits · schema</strong></div><b>→</b><div><small>03 · TRACXN DATA</small><strong>Verified company records</strong></div></div>
+              <div class="api-response"><div class="response-head"><span><i></i> 200 OK</span><small>184 ms · application/json</small></div><pre><code>{
+  <b>"company"</b>: "Example Fintech",
+  <b>"stage"</b>: "Series B",
+  <b>"funding"</b>: "$32M",
+  <b>"source"</b>: "Tracxn verified"
+}</code></pre></div>
+            </div>
+            <div class="api-foundation"><span>API keys</span><span>OpenAPI docs</span><span>Stable schemas</span><span>Usage monitoring</span></div>
+            <div class="visual-caption"><strong>Customer request → governed access → trusted response</strong><span>A usable, reliable and buyable data product</span></div>
+          </div>
         </article>
 
         <article class="case-card professional-showcase reverse">
@@ -198,7 +217,33 @@
 
         <article class="case-card professional-showcase reverse">
           <div class="professional-copy"><div class="case-top compact"><div><span class="case-index">06 / PLATFORM ECOSYSTEM</span><h3>Enterprise Data &amp; Integrations</h3></div><div class="metric-chip"><strong>30%</strong><span>workload reduction</span></div></div><p class="problem-statement"><strong>The problem:</strong> customers needed market intelligence inside the CRMs, warehouses, spreadsheets and identity systems where their teams already worked.</p><h4 class="feature-title">The product ecosystem</h4><p class="solution-summary">A portfolio of integrations that moves Tracxn data into enterprise workflows while supporting identity, billing and data delivery.</p><ul class="feature-list compact-features"><li><span>01</span><div><strong>CRM workflows</strong><small>Salesforce, HubSpot, Pipedrive, Affinity and Zoho.</small></div></li><li><span>02</span><div><strong>Data and productivity</strong><small>APIs, Snowflake, BigQuery, Excel and Google Sheets.</small></div></li><li><span>03</span><div><strong>Enterprise foundations</strong><small>OAuth, SSO and billing integrations.</small></div></li></ul><div class="impact-line"><span>OUTCOME</span><strong>Plugins reduced analyst workload by 30%.</strong></div><details><summary>My role &amp; product lesson <span>+</span></summary><div class="details-body"><p>Customer workflow discovery, requirements, prioritization and delivery across integrations, data access, productivity and identity surfaces.</p><div class="callout"><strong>Product lesson:</strong> A platform becomes more valuable when it meets customers inside their existing systems and operating habits.</div></div></details></div>
-          <div class="professional-visual ecosystem-product-visual" aria-label="Enterprise data integration ecosystem"><div class="platform-center">Tracxn<br><strong>Data Platform</strong></div><div class="ecosystem-lane"><small>CRM</small><span>Salesforce</span><span>HubSpot</span><span>Pipedrive</span><span>Affinity</span><span>Zoho</span></div><div class="ecosystem-lane"><small>DATA</small><span>API</span><span>Snowflake</span><span>BigQuery</span></div><div class="ecosystem-lane"><small>PRODUCTIVITY</small><span>Excel</span><span>Google Sheets</span></div><div class="ecosystem-lane"><small>FOUNDATION</small><span>OAuth / SSO</span><span>Billing</span></div><div class="visual-caption"><strong>One data platform → the tools customers already use</strong><span>Adoption through workflow integration</span></div></div>
+          <div class="professional-visual ecosystem-product-visual" aria-label="Enterprise data integration ecosystem">
+            <div class="platform-center"><span>TRACXN</span><strong>One data platform</strong><small>Delivered inside every customer workflow</small></div>
+            <div class="ecosystem-groups">
+              <div class="ecosystem-group"><small>CRM WORKFLOWS</small><div class="integration-grid crm-grid">
+                <span class="integration-logo"><img src="assets/logos/salesforce.svg" alt=""><b>Salesforce</b></span>
+                <span class="integration-logo"><img src="assets/logos/hubspot.svg" alt=""><b>HubSpot</b></span>
+                <span class="integration-logo"><img src="assets/logos/pipedrive.svg" alt=""><b>Pipedrive</b></span>
+                <span class="integration-logo"><i class="lettermark affinity-mark">A</i><b>Affinity</b></span>
+                <span class="integration-logo"><img src="assets/logos/zoho.svg" alt=""><b>Zoho</b></span>
+              </div></div>
+              <div class="ecosystem-group"><small>DATA + PRODUCTIVITY</small><div class="integration-grid">
+                <span class="integration-logo"><i class="lettermark api-mark">{ }</i><b>API</b></span>
+                <span class="integration-logo"><img src="assets/logos/snowflake.svg" alt=""><b>Snowflake</b></span>
+                <span class="integration-logo"><img src="assets/logos/bigquery.svg" alt=""><b>BigQuery</b></span>
+                <span class="integration-logo"><img src="assets/logos/excel.svg" alt=""><b>Excel</b></span>
+                <span class="integration-logo"><img src="assets/logos/google-sheets.svg" alt=""><b>Sheets</b></span>
+              </div></div>
+              <div class="ecosystem-group"><small>IDENTITY + BILLING</small><div class="integration-grid foundation-grid">
+                <span class="integration-logo"><img src="assets/logos/okta.svg" alt=""><b>Okta</b></span>
+                <span class="integration-logo"><img src="assets/logos/microsoft.svg" alt=""><b>Entra ID</b></span>
+                <span class="integration-logo"><img src="assets/logos/stripe.svg" alt=""><b>Stripe</b></span>
+                <span class="integration-logo"><img src="assets/logos/razorpay.svg" alt=""><b>Razorpay</b></span>
+                <span class="integration-logo"><i class="lettermark easebuzz-mark">e</i><b>Easebuzz</b></span>
+              </div></div>
+            </div>
+            <div class="visual-caption"><strong>One data platform → the tools customers already use</strong><span>Adoption through workflow integration</span></div>
+          </div>
         </article>
       </div>
     </section>
