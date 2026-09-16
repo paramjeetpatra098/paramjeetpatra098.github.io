@@ -67,9 +67,74 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">SELECTED WORK</p>
-          <h2>Products I’ve helped build.</h2>
+          <h2>Products I’ve built and helped build.</h2>
         </div>
-        <p class="section-intro">A mix of AI-native products, platform bets and commercial products—showing how I think from problem to outcome.</p>
+        <p class="section-intro">A mix of shipped prototypes, AI-native products, platform bets and commercial products—showing how I think from problem to outcome.</p>
+      </div>
+
+      <div class="builds-heading">
+        <p class="eyebrow">SHIPPED PRODUCTS</p>
+        <p>Hands-on product experiments that I designed and built end to end.</p>
+      </div>
+
+      <div class="case-row product-builds">
+        <article class="case-card build-card">
+          <div class="case-top compact">
+            <div>
+              <span class="case-index">AI CREATIVE WORKFLOW</span>
+              <h3>Minimalist Ad Pre-flight</h3>
+              <p class="case-subtitle">Generate or review a brand-safe Meta ad from verified product evidence before it leaves the tool.</p>
+            </div>
+            <div class="build-badge">LIVE APP</div>
+          </div>
+          <div class="product-flow" aria-label="Minimalist Ad Pre-flight workflow">
+            <span>Product evidence</span><b>→</b><span>Generate or upload</span><b>→</b><span>Review &amp; fix</span><b>→</b><span>Export</span>
+          </div>
+          <div class="case-grid one-col">
+            <div><h4>Problem</h4><p>Creative teams need speed, but unsupported claims, weak evidence and brand-rule misses can turn a fast draft into risky advertising.</p></div>
+            <div><h4>Product approach</h4><p>A two-path workflow for creating a new ad or reviewing an existing one, with evidence-bounded generation, deterministic pre-flight scoring and export gating.</p></div>
+            <div><h4>Built with</h4><p>Python · Streamlit · OpenAI · versioned brand and claims rules · golden-case evaluations · privacy-safe operational logs.</p></div>
+          </div>
+          <div class="project-actions">
+            <a class="button primary" href="https://minimalist-ad-preflight.streamlit.app/" target="_blank" rel="noopener">Open live app ↗</a>
+            <a class="button secondary" href="https://github.com/paramjeetpatra098/minimalist-ad-preflight" target="_blank" rel="noopener">View source ↗</a>
+          </div>
+          <details><summary>Product notes <span>+</span></summary><div class="details-body">
+            <ul><li>Starts from a product URL, with manual evidence and image fallbacks when a page cannot be read.</li><li>Separates reference-only data such as price, ratings and offers from automatically usable ad claims.</li><li>Blocks creative export while unresolved REVIEW or BLOCK findings remain.</li><li>Keeps the rulebook, prompt snapshots and scorer evaluation fixtures versioned alongside the application.</li></ul>
+            <div class="callout"><strong>Product lesson:</strong> Generative speed becomes useful only when evidence, evaluation and clear human control are part of the workflow.</div>
+          </div></details>
+        </article>
+
+        <article class="case-card build-card">
+          <div class="case-top compact">
+            <div>
+              <span class="case-index">COMMERCE AUTOMATION</span>
+              <h3>Basketly</h3>
+              <p class="case-subtitle">Compare live grocery prices across four retailers without a paid API or background server.</p>
+            </div>
+            <div class="build-badge">CHROME</div>
+          </div>
+          <div class="store-strip" aria-label="Supported grocery retailers">
+            <span>Zepto</span><span>Blinkit</span><span>Instamart</span><span>Flipkart Minutes</span>
+          </div>
+          <div class="case-grid one-col">
+            <div><h4>Problem</h4><p>The cheapest grocery option is difficult to find when pack sizes, product names, availability, delivery times and prices differ across retailer apps.</p></div>
+            <div><h4>Product approach</h4><p>A local-first Chrome extension that reads live product cards for the user’s signed-in delivery location, normalizes quantity and unit price, classifies products and keeps retailer carts as the source of truth.</p></div>
+            <div><h4>Built with</h4><p>Manifest V3 · JavaScript · Chrome tabs, storage, scripting and debugger APIs · store-specific extraction and cart verification.</p></div>
+          </div>
+          <div class="project-actions">
+            <a class="button primary" href="https://github.com/paramjeetpatra098/basketly-grocery-compare" target="_blank" rel="noopener">View project ↗</a>
+          </div>
+          <details><summary>Product notes <span>+</span></summary><div class="details-body">
+            <ul><li>Normalizes weight, volume and item count so “best price” means best comparable unit price.</li><li>Uses adaptive facets to group varied retailer titles by category, quantity and brand.</li><li>Confirms cart mutations by reading the retailer cart again instead of trusting button labels or badges.</li><li>Reports a store as unavailable when a session, page or selector fails rather than inventing a listing.</li></ul>
+            <div class="callout"><strong>Product lesson:</strong> Comparison products earn trust through normalization, failure transparency and verification—not by merely aggregating more results.</div>
+          </div></details>
+        </article>
+      </div>
+
+      <div class="builds-heading professional-heading">
+        <p class="eyebrow">PROFESSIONAL PRODUCT WORK</p>
+        <p>Selected AI, platform, API and enterprise product outcomes.</p>
       </div>
 
       <article class="case-card featured">
