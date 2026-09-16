@@ -207,12 +207,44 @@
 
         <article class="case-card professional-showcase reverse">
           <div class="professional-copy"><div class="case-top compact"><div><span class="case-index">04 / AI OPERATING MODEL</span><h3>AI-powered Product Workflows</h3></div></div><p class="problem-statement"><strong>The problem:</strong> PM teams spent significant time turning unstructured inputs into analysis, requirements, tests and recurring reports.</p><h4 class="feature-title">The product system</h4><p class="solution-summary">Human-in-the-loop LLM workflows that transform repetitive product inputs into structured drafts and decision support.</p><ul class="feature-list compact-features"><li><span>01</span><div><strong>Structure unstructured inputs</strong><small>Customer feedback, research and requirements become usable artifacts.</small></div></li><li><span>02</span><div><strong>Accelerate quality work</strong><small>Supports testing, quality analysis and competitive research.</small></div></li><li><span>03</span><div><strong>Keep human accountability</strong><small>Validation remains explicit before decisions or actions.</small></div></li></ul><div class="impact-line neutral"><span>DESIGN PRINCIPLE</span><strong>Automate transformation work; preserve human judgment.</strong></div><details><summary>Implementation &amp; lessons <span>+</span></summary><div class="details-body"><p>Used across requirement gathering, feedback analysis, requirement writing, product testing, quality analysis, research and dashboard/MIS creation.</p><div class="callout"><strong>Product lesson:</strong> Good AI automation starts with an explicit input/output contract and evaluation criteria.</div></div></details></div>
-          <div class="professional-visual workflow-product-visual" aria-label="AI-assisted product workflow"><div class="workflow-lane old-lane"><small>BEFORE</small><span>Feedback inbox</span><b>→</b><span>Manual synthesis</span><b>→</b><span>Repeated formatting</span><b>→</b><span>PM artifact</span></div><div class="workflow-shift">AI-assisted operating layer</div><div class="workflow-lane new-lane"><small>AFTER</small><span>Defined inputs</span><b>→</b><span>LLM transformation</span><b>→</b><span>Human validation</span><b>→</b><span>Decision / action</span></div><div class="workflow-uses"><span>Requirements</span><span>Feedback</span><span>Testing</span><span>Research</span><span>Reporting</span></div><div class="visual-caption"><strong>Repeatable workflow, explicit validation, faster output</strong><span>Human-in-the-loop by design</span></div></div>
+          <div class="professional-visual workflow-product-visual" aria-label="AI-assisted product workflow workspace">
+            <div class="workflow-window">
+              <div class="product-window-bar"><span><i></i><i></i><i></i></span><strong>AI Workflow Studio</strong><em>HUMAN-IN-THE-LOOP</em></div>
+              <div class="workflow-source-area"><small>01 · UNSTRUCTURED INPUTS</small><div class="source-cards"><span><i>12</i><b>Customer notes</b></span><span><i>36</i><b>Support tickets</b></span><span><i>4</i><b>Research docs</b></span></div></div>
+              <div class="workflow-engine">
+                <div class="engine-title"><span class="spark-mark">✦</span><div><small>02 · AI TRANSFORMATION</small><strong>Feedback synthesis</strong></div><em>Running</em></div>
+                <div class="engine-steps"><span class="complete"><i>✓</i>Clean inputs</span><b>→</b><span class="complete"><i>✓</i>Cluster themes</span><b>→</b><span class="active"><i>3</i>Draft brief</span></div>
+                <div class="theme-preview"><span style="--w:92%"></span><span style="--w:74%"></span><span style="--w:84%"></span><small>4 themes · 9 evidence links retained</small></div>
+              </div>
+              <div class="human-checkpoint"><div><span>03 · HUMAN CHECKPOINT</span><strong>Review before publishing</strong><small>2 claims need validation</small></div><b>Review draft ↗</b></div>
+              <div class="workflow-output-area"><small>04 · REUSABLE OUTPUTS</small><div class="output-cards"><span><i>PRD</i><b>Requirement draft</b></span><span><i>QA</i><b>Test scenarios</b></span><span><i>↗</i><b>Insight report</b></span></div></div>
+            </div>
+            <div class="workflow-gain"><span>BEFORE · scattered inputs + repeated formatting</span><strong>AFTER · one review checkpoint → structured artifacts</strong></div>
+            <div class="visual-caption"><strong>Inputs → AI transformation → human validation → usable output</strong><span>Faster work without delegating judgment</span></div>
+          </div>
         </article>
 
         <article class="case-card professional-showcase">
           <div class="professional-copy"><div class="case-top compact"><div><span class="case-index">05 / AI AGENTS</span><h3>Custom Agents &amp; Skills</h3></div></div><p class="problem-statement"><strong>The problem:</strong> generic AI responses rarely understand a customer’s workflow, data, tools, rules or failure conditions well enough to complete real work.</p><h4 class="feature-title">The product</h4><p class="solution-summary">Workflow-specific agents that combine context, trusted data, tools and operating rules to produce a useful outcome.</p><ul class="feature-list compact-features"><li><span>01</span><div><strong>Starts with the customer job</strong><small>Targets frequent, painful workflows rather than generic chat.</small></div></li><li><span>02</span><div><strong>Connects tools and context</strong><small>Defines the data and actions the agent needs to work.</small></div></li><li><span>03</span><div><strong>Designs for failure</strong><small>Separates delegated actions from decisions requiring human control.</small></div></li></ul><div class="impact-line neutral"><span>PRODUCT STANDARD</span><strong>Useful workflow outcome—not just a plausible response.</strong></div><details><summary>My role &amp; product questions <span>+</span></summary><div class="details-body"><p>Workflow identification, agent and tool requirements, failure-mode design, control boundaries and success evaluation.</p><div class="callout"><strong>Evaluation questions:</strong> What context is required? Which decisions can be delegated? What happens when the agent is uncertain?</div></div></details></div>
-          <div class="professional-visual agent-product-visual" aria-label="Custom agent product architecture"><div class="agent-goal">Customer goal<small>Complete a specific workflow</small></div><div class="agent-inputs"><span>DATA</span><span>TOOLS</span><span>CONTEXT</span><span>RULES</span></div><div class="agent-core-visual"><i></i><strong>Custom agent</strong><small>Plan · act · check</small></div><div class="guardrail-ring"><span>Human control</span><span>Failure handling</span><span>Evaluation</span></div><div class="agent-outcome">Verified workflow outcome ✓</div><div class="visual-caption"><strong>Goal + tools + context + rules → controlled execution</strong><span>Designed around real customer work</span></div></div>
+          <div class="professional-visual agent-product-visual" aria-label="Custom agent execution workspace">
+            <div class="agent-window">
+              <div class="product-window-bar"><span><i></i><i></i><i></i></span><strong>Market Monitoring Agent</strong><em><i></i> ACTIVE</em></div>
+              <div class="agent-goal-card"><small>CUSTOMER GOAL</small><strong>Build a verified weekly brief on India’s EV battery market.</strong><span>Run agent ↗</span></div>
+              <div class="agent-workspace">
+                <div class="agent-run">
+                  <small>EXECUTION PLAN</small>
+                  <div class="run-step done"><i>✓</i><div><strong>Define research scope</strong><span>India · EV batteries · last 7 days</span></div><em>DONE</em></div>
+                  <div class="run-step active"><i>↗</i><div><strong>Call trusted tools</strong><span>Search companies, funding and news</span></div><em>3 CALLS</em></div>
+                  <div class="tool-calls"><span>Tracxn data <b>✓</b></span><span>Company news <b>✓</b></span><span>Funding events <b>•••</b></span></div>
+                  <div class="run-step"><i>3</i><div><strong>Synthesize and cite</strong><span>Generate brief with source links</span></div><em>NEXT</em></div>
+                </div>
+                <aside class="agent-context"><small>OPERATING BOUNDARIES</small><div><span>DATA</span><strong>Verified sources only</strong></div><div><span>RULE</span><strong>No uncited claims</strong></div><div><span>ACTION</span><strong>Ask before publishing</strong></div></aside>
+              </div>
+              <div class="approval-gate"><span><i>!</i><div><small>HUMAN CONTROL</small><strong>Publishing requires approval</strong></div></span><b>Guardrail active</b></div>
+              <div class="agent-result"><span><i>✓</i><div><small>WORKFLOW OUTCOME</small><strong>Verified market brief ready</strong></div></span><em>6 sources cited</em></div>
+            </div>
+            <div class="visual-caption"><strong>Plan → use tools → check evidence → request approval</strong><span>An agent that completes work within clear boundaries</span></div>
+          </div>
         </article>
 
         <article class="case-card professional-showcase reverse">
